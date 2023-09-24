@@ -1,0 +1,93 @@
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+.section {
+  position: relative;
+  &.section-ATHLETS {
+    .section-title{
+      margin-top:24px;
+      @media (max-width: $breakpoint-tablet) {
+        margin-top:80px;
+      }
+    }
+    
+  }
+  &.section-PLAYERS {
+    padding-top: 125px;
+    .section-subsection {
+      .subsection-title {
+        span{
+          &.white-dash {
+            color:#8F6BE8;
+          }
+        }
+      }
+    }
+    @media (max-width: $breakpoint-desktop) {
+      padding-top:50px;
+      .section-title{
+        margin-left:48px;
+      }
+    }
+    @media (max-width: $breakpoint-tablet) {
+      padding-top:50px;
+      .section-title{
+        margin-left:24px;
+      }
+    }
+    
+  }
+  .section-title {
+    color: #e7e7e7;
+    font-size: 90px;
+  }
+  .section-subsection {
+    .subsection-title {
+      color: #c2c2c2;
+      font-size: 36px;
+      margin-bottom: 20px;
+      span {
+        font-size:18px;
+        border-bottom: 5px solid #603ebe;
+        margin-right: 10px;
+        position: relative;
+        top: -10px;
+        color:black;
+        &.white-dash {
+          border-bottom: 5px solid white;
+          
+        }
+      }
+      @media (min-width: $breakpoint-tablet) {
+       
+      }
+    }
+  }
+}
+
+/* For Mobile */
+@media(max-width:$breakpoint-mobile){
+  .section {
+    .section-title{
+      margin-top:20px;
+      font-size:50px;
+    }
+    &.section-ATHLETS {
+      .section-title{
+        margin-top:10px;
+        
+      }
+    }
+    &.section-PLAYERS {
+      padding-top: 20px;
+      .section-title{
+        margin-left: 0px;
+        margin-top:0;
+      }
+    }
+  }
+  .alice-carousel__dots{margin:-70px 0 0!important; position:relative; z-index:99!important;}
+  .alice-carousel__dots-item{ background:#D8D8D8!important;  }
+  .alice-carousel__dots-item.__active{background:#5C3CAF!important;}
+  .alice-carousel__prev-btn, .alice-carousel__next-btn{display:none!important;}
+}
